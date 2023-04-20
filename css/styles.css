@@ -1,3 +1,16 @@
+/* CUSTOM PROPS */
+:root {
+  --accent-color-green: #0a775f;
+  --accent-color-green-80: rgba(10, 119, 95, 0.8);
+  --accent-color-green-60: rgba(10, 119, 95, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
+  --text-color: #333;
+  --outline-color: var(--accent-color-green);
+  --light-brown: #f3d7b7;
+  --light-bg: #f8f8f2;
+}
 /* FONTS */
 @font-face {
   font-family: "Roboto";
