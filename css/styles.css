@@ -63,6 +63,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+*:focus {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 3px;
+}
 /* CONTAINER */
 .container {
   max-width: 1440px;
@@ -72,11 +76,86 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-*:focus {
-  outline: 2px dashed var(--outline-color);
-  outline-offset: 3px;
-}
 /* MAIN */
 .main-content {
   flex-grow: 1;
+}
+/* SITE HEADER INTRO WRAPPER */
+.site-header-hero-wrapper {
+  background-color: var(--light-brown);
+  background-image: url(../img/site-header-intro-bg.jpg);
+}
+/* SITE HEADER */
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-header-logo-link {
+  flex-shrink: 0;
+  display: flex;
+}
+.site-header-logo-link:hover {
+  opacity: 0.8;
+}
+.site-header-logo-link:active {
+  opacity: 0.6;
+}
+.site-header-logo-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* SITENAV */
+.sitenav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.sitenav-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: var(--text-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+
+}
+.sitenav-link:hover {
+  color: var(--accent-color-green-80);
+}
+.sitenav-link:active {
+  color: var(--accent-color-green-60);
+}
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+  .site-header-hero-wrapper,
+  .site-footer {
+    background-image: url(../img/site-header-intro-bg@2x.jpg);
+
+  }
+
 }
