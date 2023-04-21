@@ -378,7 +378,7 @@ a {
 .how-it-works-inner {
   position: relative;
   padding: 50px 30px;
-  background-color: var(-accent-color-green);
+  background-color: var(--accent-color-green);
   background-image: url(../img/how-it-works-bg.jpg);
   text-align: center;
 }
